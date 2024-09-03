@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>История вычислений</title>
+    <link rel="stylesheet" href="/css/answer.css">
 </head>
 
 <body>
-
+<h1>История вычислений</h1>
+<ul>
+    <li th:each="answer : ${answers}" th:text="${answer}"></li>
+</ul>
+<a href="/" class="button">На главную</a>
 </body>
 
 </html>
